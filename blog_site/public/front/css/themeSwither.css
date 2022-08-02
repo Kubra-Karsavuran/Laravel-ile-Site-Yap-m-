@@ -1,0 +1,304 @@
+/* ===[ Theme switcher ]===
+   ==================================================
+   ================================================== */
+
+#theme-switcher * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#theme-switcher{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #333;
+    position: fixed;
+    left: -190px;
+    top: 50px;
+    width: 190px;
+    color: #9f9f9f;
+    text-shadow: 1px 1px 1px #fff;
+    background: #ffffff;
+    padding: 20px 15px 20px 15px;
+    z-index:10000;
+    border:solid 1px #b7b7b7;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+}
+
+#theme-switcher.right{
+    right: -190px;
+    left:auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#theme-switcher.active{
+    left: 0px;
+}
+
+#theme-switcher.right.active{
+    left: auto;
+    right:0px;
+}
+
+#theme-switcher .theme-switcher-toggle{
+    background:#ffffff;
+    border-right:solid 1px #b7b7b7;
+    border-bottom:solid 1px #b7b7b7;
+    border-top:solid 1px #b7b7b7;
+    width:35px;
+    height:35px;
+    position:absolute;
+    padding-top:7px;
+    right:-35px;
+    top:40px;
+    text-align:center;
+    border-radius: 0px 10px 10px 0px;
+    -webkit-border-radius: 0px 10px 10px 0px;
+    -moz-border-radius: 0px 10px 10px 0px;
+    text-decoration:none;
+}
+
+#theme-switcher.right .theme-switcher-toggle{
+    right:auto;
+    left:-35px;
+    border-left:solid 1px #b7b7b7;
+    border-right:none;
+    border-bottom:solid 1px #b7b7b7;
+    border-top:solid 1px #b7b7b7;
+    border-radius: 10px 0px 0px 10px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+}
+
+.theme-switcher-toggle:hover{
+    text-decoration:none;
+}
+
+.theme-switcher-toggle:before{
+    color:#F4594E;
+    content: "\f013";
+    font-size:20px;
+    width:32px;
+    display: block;
+    text-align: center;
+    margin-right: 10px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+}
+
+#theme-switcher.active .theme-switcher-toggle:before{
+    content: "\f013";
+}
+
+.theme-switcher-inner ul{
+    list-style:none;
+    padding:0px;
+    margin:0px;
+}
+
+.theme-switcher-inner ul li{
+    display:inline-block;
+    margin:0px;
+}
+
+.theme-switcher-inner ul li:before{
+    display:none;
+}
+
+.theme-switcher-inner ul li a{
+    padding:10px;
+    margin:1px;
+    border:solid 0px #b7b7b7;
+    display:block;
+    -moz-opacity:0.2;
+    opacity:0.2;
+    position:relative;
+    border-radius:100%;
+}
+
+
+.theme-switcher-inner ul li a.setlayoutbackground{
+    opacity:1;
+    border:solid 1px #ffffff;
+}
+
+a.setlayoutcolor.active,
+a.setlayoutbackground.active{
+    border:solid 0px #777777;
+    -moz-opacity:1;
+    opacity:1;
+}
+
+.theme-switcher-inner ul li a.setlayoutbackground.active{
+    border:solid 1px #d1d1d1;
+}
+
+.theme-switcher-inner ul li a i{
+    position:absolute;
+    top:4px;
+    left:5px;
+    color:#777777;
+}
+
+.theme-switcher-inner ul li:first-child{
+}
+
+.theme-switcher-inner .tooltip-inner {
+    min-width: 100px;
+}
+
+.setlayoutfont{
+    padding:5px;
+    line-height: 5px;
+    height:25px;
+    margin-bottom:10px;
+    font-size:11px;
+    width:auto;
+}
+
+.theme-switcher-inner h4{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight:700 !important;
+    margin-top:15px;
+    font-size:15px;
+
+}
+
+.theme-switcher-inner ul li a.setlayoutbackground[data-name='default']{
+    background-size:cover;
+}
+
+.theme-switcher-inner ul li a.setlayoutbackground[data-name='sand']{
+    background-image:url('../img/themeSwitcher/sand.png');
+}
+
+.theme-switcher-inner ul li a.setlayoutbackground[data-name='diamond']{
+    background-image:url('../img/themeSwitcher/diamond.png');
+}
+
+.theme-switcher-inner ul li a.setlayoutbackground[data-name='diagonalnarrow']{
+    background-image:url('../img/themeSwitcher/diagonalnarrow.png');
+}
+
+.theme-switcher-inner ul li a.setlayoutbackground[data-name='diamondwide']{
+    background-image:url('../img/themeSwitcher/diamondwide.png');
+}
+
+.theme-switcher-inner ul li a.setlayoutbackground[data-name='arabian']{
+    background-image:url('../img/themeSwitcher/arabian.png');
+}
+
+.theme-switcher-inner ul li a.setlayoutbackground[data-name='strange']{
+    background-image:url('../img/themeSwitcher/strange.png');
+}
+
+.theme-switcher-inner ul li a.setlayoutbackground[data-name='tile']{
+    background-size:cover;
+    background-image:url('../img/themeSwitcher/tile.png');
+}
+
+.theme-switcher-inner ul li a.setlayoutbackground[data-name='linen']{
+    background-image:url('../img/themeSwitcher/linen.png');
+}
+
+.theme-switcher-inner ul li a.setlayoutbackground[data-name='stripes']{
+    background-image:url('../img/themeSwitcher/stripes.png');
+}
+
+.theme-switcher-inner ul li a.setlayoutbackground[data-name='squares']{
+    background-image:url('../img/themeSwitcher/squares.png');
+}
+
+.theme-switcher-inner ul li a.setlayoutbackground[data-name='image']{
+    background-size:cover;
+    background-image:url('../img/themeSwitcher/image_thumb.jpg');
+}
+
+.layout-style:before,.layout-style:after{
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.img-radio-button{
+    float:left;
+    width:70px;
+    height:50px;
+    position:relative;
+    margin-right:4px;
+    cursor:pointer;
+}
+
+.img-radio-button label{
+    text-indent:-9999px;
+}
+
+.img-radio-button input[name='layout-style-boxed'] + label{
+    background:url('../img/themeSwitcher/img-layout-boxed.jpg') 0px 0px no-repeat;
+}
+
+.img-radio-button input[name='layout-style-boxed']:checked + label{
+    background-position-y: -50px;
+}
+
+.img-radio-button input[name='layout-style-wide'] + label{
+    background:url('../img/themeSwitcher/img-layout-wide.jpg') 0px 0px no-repeat;
+}
+
+.img-radio-button input[name='layout-style-wide']:checked + label{
+    background-position-y: -50px;
+}
+
+.img-radio-button input{
+    visibility: hidden;
+}
+
+.img-radio-button label{
+    display:block;
+    position:absolute;
+    width:70px;
+    height:50px;
+    top:0px;
+    left:0px;
+    cursor:pointer;
+}
+
+
+/* ===[ body theme ]===
+   ==================================================
+   ================================================== */
+
+/* ===[ Backgrounds ]===
+   ==================================================
+   ================================================== */
+body.layoutbackground-sand{background-image:url('../img/themeSwitcher/sand.png');}
+body.layoutbackground-diamond{background-image:url('../img/themeSwitcher/diamond.png');}
+body.layoutbackground-diagonalwide{background-image:url('../img/themeSwitcher/diagonalwide.png');}
+body.layoutbackground-diagonalnarrow{background-image:url('../img/themeSwitcher/diagonalnarrow.png');}
+body.layoutbackground-diamondwide{background-image:url('../img/themeSwitcher/diamondwide.png');}
+body.layoutbackground-strange{background-image:url('../img/themeSwitcher/strange.png');}
+body.layoutbackground-arabian{background-image:url('../img/themeSwitcher/arabian.png');}
+body.layoutbackground-tile{background-image:url('../img/themeSwitcher/tile.png');}
+body.layoutbackground-linen{background-image:url('../img/themeSwitcher/linen.png');}
+body.layoutbackground-stripes{background-image:url('../img/themeSwitcher/stripes.png');}
+body.layoutbackground-squares{background-image:url('../img/themeSwitcher/squares.png');}
+body.layoutbackground-image{background-image:url('../img/themeSwitcher/image.jpg'); background-size:cover; background-attachment:fixed;}

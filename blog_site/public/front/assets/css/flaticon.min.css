@@ -1,0 +1,61 @@
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon-1.eot") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg") format("svg");
+  }
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after{font-family:Flaticon;font-style:normal;}
+
+.wt-icon-box-xl [class^="flaticon-"]:before, .wt-icon-box-xl [class*=" flaticon-"]:before,
+.wt-icon-box-xl [class^="flaticon-"]:after, .wt-icon-box-xl [class*=" flaticon-"]:after{font-size:96px;}
+.wt-icon-box-lg [class^="flaticon-"]:before, .wt-icon-box-lg [class*=" flaticon-"]:before,
+.wt-icon-box-lg [class^="flaticon-"]:after, .wt-icon-box-lg [class*=" flaticon-"]:after{font-size:72px;}
+.wt-icon-box-md [class^="flaticon-"]:before, .wt-icon-box-md [class*=" flaticon-"]:before,
+.wt-icon-box-md [class^="flaticon-"]:after, .wt-icon-box-md [class*=" flaticon-"]:after{font-size:48px;}
+.wt-icon-box-sm [class^="flaticon-"]:before, .wt-icon-box-sm [class*=" flaticon-"]:before,
+.wt-icon-box-sm [class^="flaticon-"]:after, .wt-icon-box-sm [class*=" flaticon-"]:after{font-size:36px;}
+.wt-icon-box-xs [class^="flaticon-"]:before, .wt-icon-box-xs [class*=" flaticon-"]:before,
+.wt-icon-box-xs [class^="flaticon-"]:after, .wt-icon-box-xs [class*=" flaticon-"]:after{font-size:24px;}
+
+
+
+.flaticon-makeup:before { content: "\f100"; }
+.flaticon-hair:before { content: "\f101"; }
+.flaticon-fashion:before { content: "\f102"; }
+.flaticon-steamer:before { content: "\f103"; }
+.flaticon-hair-cut:before { content: "\f104"; }
+.flaticon-shampoo:before { content: "\f105"; }
+.flaticon-hair-spray:before { content: "\f106"; }
+.flaticon-hair-brush:before { content: "\f107"; }
+.flaticon-hair-treatment:before { content: "\f108"; }
+.flaticon-scissors:before { content: "\f109"; }
+.flaticon-beauty:before { content: "\f10a"; }
+.flaticon-hair-dye:before { content: "\f10b"; }
+.flaticon-barber:before { content: "\f10c"; }
+.flaticon-tint-brush:before { content: "\f10d"; }
+.flaticon-hair-1:before { content: "\f10e"; }
+.flaticon-haircut:before { content: "\f10f"; }
+.flaticon-mascara:before { content: "\f110"; }
+.flaticon-woman:before { content: "\f111"; }
+.flaticon-hot-stone:before { content: "\f112"; }
+.flaticon-manicure:before { content: "\f113"; }
+.flaticon-beauty-salon:before { content: "\f114"; }
+.flaticon-fashion-1:before { content: "\f115"; }
+.flaticon-hair-washing:before { content: "\f116"; }
+
+
+
+
